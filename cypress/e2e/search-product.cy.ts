@@ -4,7 +4,7 @@ describe('search product', () => {
   })
 
   it('should be able to navigate to product page and add it to the cart', () => {
-    cy.get('input[name="q"]').type('Moletom').parent('form').submit()
+    cy.searchByQuery('Moletom')
 
     cy.location('href').should('include', '/search')
     cy.location('search').should('include', 'q=Moletom')
