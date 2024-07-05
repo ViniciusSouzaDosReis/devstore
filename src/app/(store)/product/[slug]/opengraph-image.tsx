@@ -47,7 +47,7 @@ export default async function Image({
           flexDirection: 'column',
         }}
       >
-        <img src={productURL} alt="" />
+        <img src={productURL} alt="" style={{ width: '100%' }} />
       </div>
     ),
     {
